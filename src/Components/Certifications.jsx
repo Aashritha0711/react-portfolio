@@ -8,6 +8,7 @@ import cert3 from '../assets/Certifications/Cert3.jpg';
 import cert4 from '../assets/Certifications/Cert4.jpg';
 import cert5 from '../assets/Certifications/Cert5.jpg';
 import cert6 from '../assets/Certifications/Cert6.jpg';
+import oracle from '../assets/Certifications/Oracle.jpg';
 import {motion} from 'framer-motion';
 
 const Certifications = () => {
@@ -28,6 +29,9 @@ const Certifications = () => {
         <div className="conteudo__general w-full">
           <div className="container">
             <Slider {...settings}>
+              <div className="carrossel-item flex justify-center items-center ">
+                <img src={oracle} alt="Certification 7" className="max-w-full ml-40" height={700} width={700}/>
+              </div>
               <div className="carrossel-item flex justify-center items-center ">
                 <img src={cert1} alt="Certification 1" className="max-w-full ml-40" height={700} width={700}/>
               </div>

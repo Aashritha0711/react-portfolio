@@ -22,7 +22,7 @@ const About = () => {
                          <motion.span  variants={container(0.5)}
                         initial='hidden' animate='visible'
    className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-700 bg-clip-text text-4xl tracking-tight text-transparent'
-                        > Full Stack Developer</motion.span>
+                        > Software Engineer | Full Stack & GenAI</motion.span>
                         <motion.p  variants={container(1)}
                         initial='hidden' animate='visible' className='my-2 max-w-xl py-6 font-light tracking-tighter justify-center'>{HERO_CONTENT}</motion.p>
                     </div>

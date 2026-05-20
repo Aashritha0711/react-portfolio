@@ -3,13 +3,35 @@ import project2 from "../assets/projects/Project2.png";
 import project3 from "../assets/projects/Project3.png";
 import project4 from "../assets/projects/Project4.png";
 import project5 from "../assets/projects/Project5.png";
+import openshift from "../assets/projects/openshift.png";
+import e_commerce from "../assets/projects/e-commerce.png";
+import f3n from "../assets/projects/F3N.png";
 
-export const HERO_CONTENT = `Hi, I'm Aashritha, a  computer science student at Chaitanya Bharathi Instituteof Technology in Gandipet. With a strong passion for software development, I am dedicated to building innovative and efficient solutions. My journey in computer science has been fueled by my curiosity and eagerness to learn, driving me to constantly improve my skills and stay updated with the latest industry trends.I am always eager to take on new challenges and am committed to growing both personally and professionally in the field of software development.`;
+export const HERO_CONTENT = `Hi, I'm Aashritha, a Computer Science graduate from Chaitanya Bharathi Institute of Technology (CBIT). I am passionate about software engineering, full stack development, and Generative AI, with a strong interest in building impactful digital solutions. I enjoy solving real-world problems, exploring emerging technologies, and continuously improving my technical skills through projects and practical experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly web applications. As a 2nd year Computer Science student , I have gained experience working with a variety of technologies,including React, Next.js, Node.js, PostgreSQL, and MongoDB. My journey in software development began with a deep curiosity for how things work, and it has evolved into a pursuit where I continuously strive to learn and adapt to new challenges.I pride myself on my strong communication skills, which allow me to effectively convey ideas and work seamlessly with team members. This, coupled with my technical proficiency, makes me confident in my ability to contribute positively to any development team.  I thrive in collaborative environments, enjoy solving complex problems, and am committed to delivering high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and enhancing my communication skills through various activities and projects.`
+export const ABOUT_TEXT = `I am a passionate and versatile Software Engineer with experience in developing responsive and scalable web applications. My expertise includes React.js, Node.js, Python, Django, MongoDB, PostgreSQL, and Generative AI technologies. I enjoy creating efficient, user-friendly solutions that combine clean design with strong functionality.
+
+Through internships, projects, hackathons, and leadership roles, I have strengthened my problem-solving, communication, and teamwork skills while working in collaborative and fast-paced environments. I am always eager to learn new technologies, take on challenging opportunities, and build innovative applications that create real-world impact.`
 
 
 export const EXPERIENCES = [
+
+  {
+  year: "June 2025 - July 2025",
+  role: "Technology Summer Intern",
+  company: "Barclays",
+  description: `Worked on optimizing OpenShift cluster performance and improving infrastructure efficiency through dynamic resource provisioning and workload scaling. Developed solutions for centralized multi-cluster management and implemented pod health analytics to reduce manual monitoring efforts. Improved processing efficiency by 87.5%, achieved nearly 10% cost savings through optimized scaling, and reduced response time from ~4 seconds to under 1 second using efficient caching mechanisms and API optimization.`,
+  technologies: [
+    "AngularJS",
+    "Node.js",
+    "Express.js",
+    "Shell Scripting",
+    "Docker",
+    "GitLab CI/CD",
+    "Nexus Repository",
+    "OpenShift",
+  ],
+},
   
   {
     year: "April 2024 - June 2024",
@@ -41,45 +63,78 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Temperature Converter",
-    image: project1,
+    title: "Hybrid AI Clinical Assistant",
+    image: f3n,
     description:
-      "Developed a web application that converts temperature values between Celsius, Fahrenheit, and Kelvin. The project involved creating a user-friendly interface using basic HTML and CSS, and ensuring accurate conversions through mathematical formulas with JavaScript for the backend.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Developed an AI-powered clinical assistant to generate SOAP notes from doctor-patient conversations using FLAN-T5 and Whisper. Implemented NER-based clinical entity extraction and chunk-based processing for long conversations to reduce hallucinations. Built a React frontend integrated with a FastAPI backend for real-time medical transcription and report generation.",
+    technologies: [
+      "Python",
+      "React",
+      "FastAPI",
+      "FLAN-T5",
+      "MongoDB Atlas",
+    ],
   },
+
   {
-    title: "Netflix Clone",
-    image: project2,
+    title: "OpenShift Patching Optimization",
+    image: openshift,
     description:
-      "Created a front-end web application that mimics the user interface of Netflix. Utilized HTML, CSS, and JavaScript to design the interface and responsive design for various screen sizes.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Developed a Node.js service to automate OpenShift container optimization through GitLab CI/CD pipelines. Integrated real-time pod metric analysis, HPA-based autoscaling, centralized logging, and React.js dashboard monitoring while optimizing API interactions through a unified orchestrated endpoint.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "OpenShift",
+      "Docker",
+      "Shell Scripting",
+      "GitLab CI/CD",
+    ],
   },
+
   {
-    title: "Music Player Application",
-    image: project3,
+    title: "Fashion Factory - E-commerce Platform",
+    image: e_commerce,
     description:
-      "Built a fully functional music player web application using HTML, CSS, and JavaScript. Key features include play, pause, next, previous, shuffle, and repeat functionalities. The application also supports volume control and mute options. Integrated a dynamic playlist with album cover display, and implemented a progress bar for real-time tracking of the song’s playback.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Built a full-stack e-commerce web application with secure authentication, shopping cart, order management, and Stripe payment integration. Developed responsive frontend interfaces and scalable backend services to support seamless product browsing and transaction processing.",
+    technologies: [
+      "React",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+    ],
   },
-  {
-    title: "Weather Detection System",
-    image: project4,
-    description:
-      "Developed a web application using Python and Flask to fetch and display real-time weather data from an external API. The system takes city input from users and provides weather forecasts, including information such as temperature, humidity, and weather conditions. Focused on creating an intuitive frontend and basic backend functionality.",
-    technologies: ["Python", "Flask", "HTML", "CSS"],
-  },
+
+ 
+
   {
     title: "Payroll Service",
     image: project5,
     description:
-      "Designed and implemented a comprehensive payroll service system to streamline and automate payroll management for employers and employees. The system offers robust features for managing employer and user data, processing leave applications, calculating payroll, and notifying users of critical updates. Developed using Python, this project utilizes CRUD APIs, APScheduler for task automation, and an email notification system to enhance efficiency and user experience.",
-    technologies: ["Python", "CRUD APIs", "APScheduler", "Email notification system"],
-  }
+      "Designed and implemented a comprehensive payroll service system to streamline and automate payroll management for employers and employees. Developed CRUD APIs, leave management workflows, payroll calculation modules, APScheduler-based automation, and email notification systems to improve efficiency and user experience.",
+    technologies: [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "APScheduler",
+    ],
+  },
+   {
+    title: "Music Player Application",
+    image: project3,
+    description:
+      "Built a fully functional music player web application using HTML, CSS, and JavaScript. Key features include play, pause, next, previous, shuffle, and repeat functionalities. The application also supports volume control and mute options. Integrated a dynamic playlist with album cover display and implemented a progress bar for real-time playback tracking.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
+  // address: "767 Fifth Avenue, New York, NY 10153 ",
+  phoneNo: "+91 7396715060 ",
   mail: "mslaashritha7@gmail.com",
 };
 
